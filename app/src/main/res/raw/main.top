@@ -1,0 +1,27 @@
+topic: ~main()
+
+proposal: %init Ahoj lidi. Co byste chtěli zjistit?
+
+u:(~hello) Zdravíčko. Stále jsme na úvodní obrazovce.
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} one {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_one)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:({~ukazat} ["1" "jedna" "jedná" "číslo jedná" "jednička" "jedničku" "číslo jedna" "číslo 1" "Má úvodní řeč"]) ~confirmation ^execute(FragmentExecutor, frag_screen_three)
+
+u:({~ukazat} ["2" "dvě" "číslo dva" "číslo 2" "dvojku" "dvojka" "Eventoví sál" "Eventový sál" "Event" "Íventoví sál" "Íventový sál" "Ívent"]) ~confirmation ^execute(FragmentExecutor, frag_screen_four)
+
+u:({~ukazat} ["3" "tři" "číslo tři" "tří" "číslo tří" "číslo 3" "trojka" "trojku" "Coworking" "Koworking" "Kowrkin" "Kovrking"]) ~confirmation ^execute(FragmentExecutor, frag_screen_five)
+
+u:({~ukazat} ["čtyři" "čtyří" "4""číslo čtyři" "číslo čtyří" "číslo 4" "čtyřka" "čtyřku" "Kaceláře" "Kanceláře a zasedací místnosti k pronájmu"]) ~confirmation ^execute(FragmentExecutor, frag_screen_six)
+
+u:({~ukazat} ["pět" "5""číslo pět" "číslo 5" "pětku" "pětka" "Virtuální sídlo"]) ~confirmation ^execute(FragmentExecutor, frag_screen_seven)
+
+u:({~ukazat} ["šest" "6" "číslo šest" "číslo 6" "šestka" "šestku" "Pod jednou střechou"]) ~confirmation ^execute(FragmentExecutor, frag_screen_eight)
+
+u:({~ukazat} ["sedum" "sedům" "sedm"  "7" "číslo sedum" "sedmička" "sedmičku" "číslo sedům" "číslo sedm"  "číslo 7" "Co chystáme v Icuk Space Hradební" "Co chystáme v Icuk spejs Hradební" "spejs Hradební" "spejs"]) ~confirmation ^execute(FragmentExecutor, frag_screen_nine)
+
+u:({~ukazat} ["osum" "osům" "osm"  "8" "číslo osum" "číslo osům" "číslo osm" "osmička" "osmičku" "číslo 8" "Co dělá ICUK" "ICUK"]) ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

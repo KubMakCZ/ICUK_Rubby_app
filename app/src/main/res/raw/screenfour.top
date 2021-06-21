@@ -1,0 +1,18 @@
+topic: ~screenfour()
+
+proposal: %init Eventový sál...
+Eventový sál je prostor, který najdete v přízemí. Inovační centrum tu pořádá kůl akcičky. Ty tu můžete pořádat i vy. Můžete sem pozvat až 120 kamarádů. a pustit si na telce fotbálek,
+dát si pivko. Máme tu taky slušnou zvukovou aparaturu, barevný světla, projektor. To by byly párty, co.. mrk mrk...
+ICUK by ale radši pořádal něco pro podnikatele. a pro firmy.. Inovace, byznysplány, však to znáte.. Zvládáme taky onlajn strýmy a virtuální konference.
+Takže pokud vás k sálu zajímá víc, můžete se ozvat Simče Fronc.
+ímejl fronc@icuk.cz
+Taky se ale můžeme domluvit spolu na ten fotbálek a pivka pro kamarády. mrk mrk. Udělám vám slevičku.
+
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

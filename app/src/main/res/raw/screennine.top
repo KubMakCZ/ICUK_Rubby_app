@@ -1,0 +1,17 @@
+topic: ~screennine()
+
+proposal: %init Co chystáme v Icuk Spejs Hradební?..
+Ten Icuk, je jako dobrá organizace. dělaj akcičky pro studenty a pro firmy, ale musela jsem je trochu pošťouchnout.
+Vymyslela jsem jim taky nějaký robotí věci, digitalizačky a tak. Příští rok proto díky mně tady budou dělat Mobility Inovejšn Hab.
+No a ten Mobility Inovejšn Hab dá zázemí pro firmičky, který budou vyvíjet něco v chytrý mobilitě, bude tam k dispozici chytrej inkubátor, chytrý experti.
+Bude to propojený s chytrou zónou na Severní Terase. No a kdo myslíte, že bude na tyhle chytrý věci taky expert? Hmm, nevíte? No já! To mám domluvený. Mrk mrk.
+A v neposlední řadě funguje na Icuk spejs Hradební taky jeden z didžitl inovejšn habů. To jsou ty digitalizačky a robotí věci ve firmách a to je taky moje práce.
+Zkrátka a dobře, tady budou roboti vypadávat z oken, respektive z tý skvělý terasy v prvním patře. A to chceš! Mrk mrk.
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

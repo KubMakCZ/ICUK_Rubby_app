@@ -1,0 +1,18 @@
+topic: ~screenfive()
+
+proposal: %init Kovorking...
+Kovorking jsou sdílené kanceláře a jejich obdobu najdeš u nás v přízemí v sousedství kavárny.. Jsou skvělé pro začínající podnikatele..
+vyjdou vás levněji než pořízení vlastní kanceláře. přestanete pracovat v pyžamu jako doma.. můžete si zamluvit zasedačku pro schůzky. a potkáte tam taky jiné podnikatele, nebo frílensry.
+Mezi námi. pojďte blíž....... S nima si můžete dát kafíčko. hodit řeč, tisknout na tiskárně, jezdit výtahem, dělat závody na kancelářských židlích a taky dělat akcičky v evenťáku.
+Ale hlavně poznat ostatní byznysmeny. a společně vymyslet něco fakt velkýho. S tím pak může pomoct náš skvělý program pro začínající podnikatele, podnikatelský inkubátor.
+Ke kovorkingu vám poví víc jeho šéfka Vendy Soukupová
+ímejl soukupova@icuk.cz.
+
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

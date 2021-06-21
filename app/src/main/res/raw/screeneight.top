@@ -1,0 +1,17 @@
+topic: ~screeneight()
+
+proposal: %init Pod jednou střechou...
+Icuk spejs hradební je parádní prostor pro vaše podnikání v centru města, sídlí v budově nazvané Rezidence Hradební.
+Celkem tři patra tvoří nové sídlo Inovačního centra Ústeckého kraje a dalších partnerů pro podporu podnikání, obchodu a inovací, dále koworkingové centrum, sál pro akce a kanceláře.
+s Icukem tu také sídlí agentura Čekinvest a API, to je agentura pro podporu podnikání a inovací. Je tu také regionální zastoupení Technologické agentury ČR, tedy TAČR.
+Do technologií já dělám furt, takže u mě máte tlačenku. A ještě tu taky bude Ček trejd. No a trejdům těm já hodně rozumím, se domluvíme. Mrk mrk.
+Jo, a budou v prvním patře pod jednou střechou spolu s Icukem, a Icuk ten mám na háku. Protože víte, koho znám? Ha? Ředitele. Takže se na mě neváhejte obrátit. Mrk mrk.
+
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

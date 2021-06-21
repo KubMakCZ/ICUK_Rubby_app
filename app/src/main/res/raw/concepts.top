@@ -1,0 +1,16 @@
+topic: ~concepts()
+
+concept:(i_want_to) [want "I want" "I want to" "want to" "I would like to" "would like to"]
+
+concept:(i_need_to) [need "I need" "I need to" "need to"]
+
+concept:(hello) ["ahoj" "čau" "tě péro" "Dobrý den" "Dobrý večer"]
+
+concept:(rozloucit)["děkuji" "to bylo zajímavé" "to bylo zajímavý" "nashledanou" "naschledanou" "na viděnou"]
+
+concept:(ukazat)["ukaž" "řekní" "otevři" "zobraz" "zobrazit" "řekni nám o" "řekni mi o"]
+
+concept:(restartik)["reset" "rezet" "restartovat" "reztartovat" "zpět" "spět" "zpět na úvodní obrazovku" "spět na úvodní obrazovku" "na začátek"]
+
+concept:(confirmation) ^rand["tak se na to podíváme" "jak je libo" "provedu" "dobře"]
+

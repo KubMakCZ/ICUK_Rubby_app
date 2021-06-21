@@ -1,0 +1,16 @@
+topic: ~screenthree()
+
+proposal: %init Má. úvodní řeč...
+Děkuju moc za slovo... TAKOVÁ ČEST! Až se mi dráty klepou trémou.
+Takže dobrý den všem! Já jsem RUBY PEPR! a ráda bych vás přivítala v icuk spejs hradební. v sídle inovačního centra ústeckého kraje. a dalších partnerů.
+Dneska vám řeknu, co u nás všechno najdete. co byste mohli také využít. anebo jak s námi spolupracovat. Je to tu moc pěkné. Co myslíte?
+Vyberte si z nabídky na mé obrazovce, co vás zajímá, a vydržte až do konce. Povím Vám spoustu zajímavých typů a informací.
+
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

@@ -1,0 +1,17 @@
+topic: ~screenseven()
+
+proposal: %init Virtuální sídlo...
+ICUK ti anebo tvé firmě nabízí, že můžeš mít stejně dobrou adresu, jako má on. Můžeš si sem nechat posílat dopisy, pohledy, korespoňďáky.
+To je dobrý, když ti píšou nějaký úřady, hodí se to taky prý na exekutory. Mrk, mrk, chápeš?
+Ty tu máš schránku, do který ti chodí dopisy, ale to je tak všechno – tu si může exekutor klidně odnést, tebe tu nechytne.
+Tak pardon, Květka, která má virtuální sídla na starosti, říká, že takto to určitě fungovat nebude a ICUK si na takové firmy dá dobrý pozor.
+Takže jestli máte seriózní firmu, ozvěte se Květce na ímejl... cavdarova@icuk.cz
+
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

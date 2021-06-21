@@ -1,0 +1,17 @@
+topic: ~screenten()
+
+proposal: %init Co dělá ICUK?..
+Icuk dělá jako ďas, dělá tohle všechno a další věcičky okolo podnikání a inovací a rozvoje regionu. Nejlepší je mrknout na tyhle webovky...
+icuk.tečka.cz....
+space.tečka.icuk.tečka.cz....
+usmartzone.tečka.cz....
+research.tečka.icuk.tečka.cz
+
+
+proposal: %say something
+
+u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
+
+u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
