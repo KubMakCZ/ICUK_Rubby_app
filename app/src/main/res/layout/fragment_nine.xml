@@ -1,8 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="fill_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/festupqr" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nine_say"
+        app:layout_constraintVertical_bias="0.336"
+        app:srcCompat="@drawable/eventee" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="251dp"
+        android:layout_height="105dp"
+        android:text="bit.ly/eventee-festup-2021"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nine_text"
+        app:layout_constraintVertical_bias="0.958" />
 
     <TextView
         android:id="@+id/nine_text"
@@ -19,23 +52,24 @@
 
     <Button
         android:id="@+id/nine_say"
-        app:layout_constraintBottom_toTopOf="@id/one_button_reset"
-        app:layout_constraintTop_toBottomOf="@id/nine_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
         android:text="Opakovat řeč"
         android:textAllCaps="false"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:paddingTop="80dp"
-        android:paddingBottom="80dp"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content" />
+        app:layout_constraintBottom_toTopOf="@id/one_button_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nine_text"
+        app:layout_constraintVertical_bias="0.092" />
 
     <Button
         android:id="@+id/one_button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
         android:layout_margin="10dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"

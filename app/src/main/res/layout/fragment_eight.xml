@@ -27,15 +27,15 @@
         android:textAllCaps="false"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:paddingTop="80dp"
-        android:paddingBottom="80dp"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content" />
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp" />
 
     <Button
         android:id="@+id/one_button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="500dp"
+        android:layout_height="250dp"
         android:layout_margin="10dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"

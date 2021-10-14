@@ -10,7 +10,7 @@ u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {ple
 
 u:({~ukazat} ["1" "jedna" "jedná" "číslo jedná" "jednička" "jedničku" "číslo jedna" "číslo 1" "Má úvodní řeč"]) ~confirmation ^execute(FragmentExecutor, frag_screen_three)
 
-u:({~ukazat} ["2" "dvě" "číslo dva" "číslo 2" "dvojku" "dvojka" "Eventoví sál" "Eventový sál" "Event" "Íventoví sál" "Íventový sál" "Ívent"]) ~confirmation ^execute(FragmentExecutor, frag_screen_four)
+u:({~ukazat} ["2" "dvě" "číslo dva" "číslo 2" "dvojku" "dvojka" "dva" "Eventový sál" "Event" "Íventoví sál" "Íventový sál" "Ívent"]) ~confirmation ^execute(FragmentExecutor, frag_screen_four)
 
 u:({~ukazat} ["3" "tři" "číslo tři" "tří" "číslo tří" "číslo 3" "trojka" "trojku" "Coworking" "Koworking" "Kowrkin" "Kovrking"]) ~confirmation ^execute(FragmentExecutor, frag_screen_five)
 

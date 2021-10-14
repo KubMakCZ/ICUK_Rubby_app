@@ -20,8 +20,8 @@
 
     <Button
         android:id="@+id/ten_say"
-        android:layout_width="442dp"
-        android:layout_height="112dp"
+        android:layout_width="450dp"
+        android:layout_height="100dp"
         android:paddingTop="10dp"
         android:paddingBottom="10dp"
         android:text="Opakovat řeč"
@@ -37,8 +37,8 @@
 
     <Button
         android:id="@+id/one_button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
         android:layout_margin="10dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
@@ -57,42 +57,35 @@
         android:layout_marginStart="16dp"
         android:text="icuk.cz"
         android:textSize="80sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ten_say" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="usmartzone.cz"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="8dp"
         android:text="space.icuk.cz"
+        android:textAlignment="textEnd"
         android:textSize="80sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintBottom_toTopOf="@+id/imageView14"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ten_say" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:text="research.icuk.cz"
-        android:textSize="60sp"
-        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
-        app:layout_constraintEnd_toEndOf="parent" />
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="219dp"
+        android:layout_height="237dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/icukqe" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="193dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/spaceqr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,24 +7,24 @@
 
     <TextView
         android:id="@+id/seven_text"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/isFragmentSeven"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="40sp"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/seven_say"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
         android:layout_marginBottom="112dp"
-        android:paddingTop="80dp"
-        android:paddingBottom="80dp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
         android:text="@string/saySomething"
         android:textAllCaps="false"
         android:textSize="40sp"
@@ -37,8 +37,8 @@
 
     <Button
         android:id="@+id/one_button_reset"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="450dp"
+        android:layout_height="150dp"
         android:layout_margin="10dp"
         android:layout_marginBottom="16dp"
         android:paddingStart="20dp"
@@ -51,16 +51,37 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="434dp"
-        android:layout_height="83dp"
-        android:text="fronc@icuk.cz"
-        android:textAlignment="center"
-        android:textSize="60sp"
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seven_say" />
+        app:layout_constraintTop_toBottomOf="@+id/seven_say"
+        app:srcCompat="@drawable/eventee" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="210dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="70dp"
+        android:text="bit.ly/eventee-festup-2021"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seven_text"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/festupqr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
