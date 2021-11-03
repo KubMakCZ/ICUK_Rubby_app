@@ -24,11 +24,10 @@
         android:id="@+id/main_button_frag_three"
         android:layout_width="450dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:layout_marginEnd="437dp"
         android:text="@string/fragmentThree"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/main_button_frag_four"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,10 +37,9 @@
         android:id="@+id/main_button_frag_four"
         android:layout_width="450dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
         android:text="@string/fragmentFour"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_text" />
 
@@ -53,7 +51,7 @@
         android:text="@string/fragmentFive"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/main_button_frag_six"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,7 +63,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fragmentSix"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_button_frag_four" />
 
@@ -75,7 +73,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fragmentSeven"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/main_button_frag_eight"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +85,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fragmentEight"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_button_frag_six" />
 
@@ -97,7 +95,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fragmentNine"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/main_button_frag_ten"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -109,7 +107,7 @@
         android:layout_height="wrap_content"
         android:text="@string/fragmentTen"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="28sp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_button_frag_eight" />
 
@@ -118,12 +116,13 @@
         android:layout_width="414dp"
         android:layout_height="139dp"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="46dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="TODO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_nine"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11"
+        app:layout_constraintVertical_bias="0.608"
         app:srcCompat="@drawable/logo_ujep" />
 
     <ImageView
@@ -131,13 +130,40 @@
         android:layout_width="456dp"
         android:layout_height="136dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:cropToPadding="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_ten"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13"
+        app:layout_constraintVertical_bias="0.529"
         app:srcCompat="@drawable/icuk" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="395dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_nine"
+        app:layout_constraintVertical_bias="0.097"
+        app:srcCompat="@drawable/logo_uka" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="375dp"
+        android:layout_height="144dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.689"
+        app:layout_constraintStart_toEndOf="@+id/imageView11"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_ten"
+        app:layout_constraintVertical_bias="0.188"
+        app:srcCompat="@drawable/logo_kraj_nove" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
