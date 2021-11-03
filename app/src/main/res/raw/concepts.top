@@ -4,7 +4,7 @@ concept:(i_want_to) [want "I want" "I want to" "want to" "I would like to" "woul
 
 concept:(i_need_to) [need "I need" "I need to" "need to"]
 
-concept:(pozdrav) ["ahoj" "čau" "tě péro" "Dobrý den" "Dobrý večer"]
+concept:(pozdrav) ["ahoj" "čau" "tě péro" "Dobrý den" "Dobrý večer" "Zdravíčko"]
 
 concept:(rozloucit)["děkuji" "to bylo zajímavé" "to bylo zajímavý" "nashledanou" "naschledanou" "na viděnou"]
 
