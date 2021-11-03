@@ -50,42 +50,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:text="icuk.cz"
-        android:textSize="80sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView12"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ten_say" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="space.icuk.cz"
-        android:textAlignment="textEnd"
-        android:textSize="80sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView14"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ten_say" />
-
     <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="219dp"
-        android:layout_height="237dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/icukqe" />
-
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="193dp"
-        android:layout_height="221dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageView7"
+        android:layout_width="753dp"
+        android:layout_height="164dp"
+        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/spaceqr" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ten_say"
+        app:srcCompat="@drawable/logolink_msmt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
