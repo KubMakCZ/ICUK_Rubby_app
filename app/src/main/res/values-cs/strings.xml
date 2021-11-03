@@ -6,6 +6,7 @@
     <string name="reset">Úvodní obrazovka</string>
     <string name="fragmentTwo">Fragment 2</string>
     <string name="fragmentOne">Fragment 1</string>
+    <!-- Hlavní nabídka -->
     <string name="fragmentThree">1. Ústecký kraj (ÚK)</string>
     <string name="fragmentFour">2. Doprovodný program ÚK na veletrhu</string>
     <string name="fragmentFive">3. Ústecký kraj je nano; úterý 13:30 až 15:30 </string>
@@ -14,14 +15,16 @@
     <string name="fragmentEight">6. Digitální firma; čtvrtek 10:00 až 12:00</string>
     <string name="fragmentNine">7. Inovační centrum Ústeckého kraje (a Rubby)</string>
     <string name="fragmentTen">8. Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
-    <string name="isFragmentThree">Kliknul jsi na Má úvodní řeč</string>
-    <string name="isFragmentFour">Kliknul jsi na Přednášky (11:00 – 16:00, eventový sál)</string>
-    <string name="isFragmentFive">Kliknul jsi na Workshopy (9:00 – 11:00 a 14:00 – 16:00, zasedačka Chomutov)</string>
-    <string name="isFragmentSix">Kliknul jsi na HR rande (9:00 – 11:00, Work Space)</string>
-    <string name="isFragmentSeven">Kliknul jsi na Konzultace s experty (13:00 – 16:00, Work Space)</string>
-    <string name="isFragmentEight">Kliknul jsi na Doprovodný program</string>
-    <string name="isFragmentNine">Kliknul jsi na Stáhni si aplikaci Eventee</string>
-    <string name="isFragmentTen">Kliknul jsi na Co nabízíme v Icuk Space hradební</string>
+    <!-- Rozkliknute fragmenty -->
+    <string name="isFragmentThree">Kliknul jsi na Ústecký kraj (ÚK)</string>
+    <string name="isFragmentFour">Kliknul jsi na Doprovodný program ÚK na veletrhu</string>
+    <string name="isFragmentFive">Kliknul jsi na Ústecký kraj je nano</string>
+    <string name="isFragmentSix">Kliknul jsi na Nová éra dat pro obce</string>
+    <string name="isFragmentSeven">Kliknul jsi na Ústecký kraj - vodíkové údolí</string>
+    <string name="isFragmentEight">Kliknul jsi na Digitální firma</string>
+    <string name="isFragmentNine">Kliknul jsi na Inovační centrum Ústeckého kraje (a Rubby)</string>
+    <string name="isFragmentTen">Kliknul jsi na Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
+    <!-- fragment_two -->
     <string name="saySomething">Opakovat řeč</string>
     <string name="isFragmentOne">Totot jeFragment 1</string>
     <string name="isFragmentTwo">Toto je fragment 2</string>
