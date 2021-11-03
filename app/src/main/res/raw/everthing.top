@@ -2,7 +2,7 @@ topic: ~everthing()
 
 # Fragment main
 proposal: %init I am now in the topic of the main fragment
-    u1:(~hello) hi ! I am still in the topic of the main fragment
+    u1:(~pozdrav [ruby]) hi ! I am still in the topic of the main fragment
 
     u1:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} one {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_one)
 
