@@ -52,36 +52,26 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView19"
+        android:layout_width="230dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seven_say"
-        app:srcCompat="@drawable/eventee" />
+        app:layout_constraintTop_toBottomOf="@+id/seven_text"
+        app:layout_constraintVertical_bias="0.435"
+        app:srcCompat="@drawable/qr_registrace_msv" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="210dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="31dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="70dp"
-        android:text="bit.ly/eventee-festup-2021"
-        android:textAlignment="textEnd"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seven_text"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/festupqr" />
+        android:layout_marginEnd="16dp"
+        android:text="icuk.cz/msv"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView19"
+        app:layout_constraintStart_toStartOf="@+id/imageView19"
+        app:layout_constraintTop_toBottomOf="@+id/imageView19" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

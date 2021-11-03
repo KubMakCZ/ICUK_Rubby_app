@@ -6,15 +6,17 @@
     <string name="reset">Úvodní obrazovka</string>
     <string name="fragmentTwo">Fragment 2</string>
     <string name="fragmentOne">Fragment 1</string>
+
     <!-- Hlavní nabídka -->
     <string name="fragmentThree">1. Ústecký kraj (ÚK)</string>
     <string name="fragmentFour">2. Doprovodný program ÚK na veletrhu</string>
-    <string name="fragmentFive">3. Ústecký kraj je nano; úterý 13:30 až 15:30 </string>
-    <string name="fragmentSix">4. Nová éra dat pro obce; středa 10:00 až 12:30 </string>
-    <string name="fragmentSeven">5. Ústecký kraj - vodíkové údolí; středa 13:30 až 16:00</string>
-    <string name="fragmentEight">6. Digitální firma; čtvrtek 10:00 až 12:00</string>
+    <string name="fragmentFive">3. Ústecký kraj je nano \n úterý 13:30 až 15:30 </string>
+    <string name="fragmentSix">4. Nová éra dat pro obce \n středa 10:00 až 12:30 </string>
+    <string name="fragmentSeven">5. Ústecký kraj - vodíkové údolí \nstředa 13:30 až 16:00</string>
+    <string name="fragmentEight">6. Digitální firma \nčtvrtek 10:00 až 12:00</string>
     <string name="fragmentNine">7. Inovační centrum Ústeckého kraje (a Rubby)</string>
     <string name="fragmentTen">8. Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
+
     <!-- Rozkliknute fragmenty -->
     <string name="isFragmentThree">Kliknul jsi na Ústecký kraj (ÚK)</string>
     <string name="isFragmentFour">Kliknul jsi na Doprovodný program ÚK na veletrhu</string>
@@ -22,7 +24,7 @@
     <string name="isFragmentSix">Kliknul jsi na Nová éra dat pro obce</string>
     <string name="isFragmentSeven">Kliknul jsi na Ústecký kraj - vodíkové údolí</string>
     <string name="isFragmentEight">Kliknul jsi na Digitální firma</string>
-    <string name="isFragmentNine">Kliknul jsi na Inovační centrum Ústeckého kraje (a Rubby)</string>
+    <string name="isFragmentNine">Kliknul jsi na Inovační centrum Ústeckého kraje \n (a Rubby)</string>
     <string name="isFragmentTen">Kliknul jsi na Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
     <!-- fragment_two -->
     <string name="saySomething">Opakovat řeč</string>
