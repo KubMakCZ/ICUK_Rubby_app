@@ -1,6 +1,6 @@
 topic: ~main()
 
-proposal: %init Ahoj lidi. Co byste chtěli zjistit?
+proposal: %init Ahoj lidi.
 
 u:(~pozdrav [ruby]) Zdravíčko. Vyberte si téma. a klikněte na moji obrazovce nebo řekněte číslo.
 

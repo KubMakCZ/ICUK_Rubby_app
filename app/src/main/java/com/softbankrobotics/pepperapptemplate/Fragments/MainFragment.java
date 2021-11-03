@@ -14,7 +14,7 @@ import androidx.fragment.app.Fragment;
 import com.softbankrobotics.pepperapptemplate.MainActivity;
 import com.softbankrobotics.pepperapptemplate.R;
 
-public class MainFragment extends Fragment {
+public class    MainFragment extends Fragment {
 
     private static final String TAG = "MSI_MainFragment";
     private MainActivity ma;
