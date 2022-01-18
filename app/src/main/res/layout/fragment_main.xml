@@ -96,20 +96,9 @@
         android:text="@string/fragmentNine"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/main_button_frag_ten"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/main_button_frag_seven" />
-
-    <Button
-        android:id="@+id/main_button_frag_ten"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content"
-        android:text="@string/fragmentTen"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_eight" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -161,7 +150,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.75"
         app:layout_constraintStart_toEndOf="@+id/imageView11"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_ten"
+        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_nine"
         app:layout_constraintVertical_bias="0.068"
         app:srcCompat="@drawable/logo_kraj_nove" />
 

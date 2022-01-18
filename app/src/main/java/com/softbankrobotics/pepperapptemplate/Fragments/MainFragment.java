@@ -59,8 +59,8 @@ public class    MainFragment extends Fragment {
                 (v) -> ma.setFragment(new ScreenEightFragment()));
         view.findViewById(R.id.main_button_frag_nine).setOnClickListener(
                 (v) -> ma.setFragment(new ScreenNineFragment()));
-        view.findViewById(R.id.main_button_frag_ten).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenTenFragment()));
+//        view.findViewById(R.id.main_button_frag_ten).setOnClickListener(
+//                (v) -> ma.setFragment(new ScreenTenFragment()));
     }
 
 }

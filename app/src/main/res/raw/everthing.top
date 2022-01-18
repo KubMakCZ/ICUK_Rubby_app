@@ -20,6 +20,6 @@ proposal: %init I am now in the topic of the main fragment
 
     u:(~ukazat ["Co chystáme v Icuk Space Hradební" "Co chystáme v Icuk spejs Hradební" "spejs"]) ~confirmation ^execute(FragmentExecutor, frag_screen_nine)
 
-    u:(~ukazat Co dělá ICUK) ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
+    u:(~ukazat "Co dělá ICUK") ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
 
    u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

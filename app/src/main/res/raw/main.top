@@ -2,7 +2,7 @@ topic: ~main()
 
 proposal: %init Ahoj lidi.
 
-u:(~pozdrav ) Zdravíčko. Vyberte si téma. a klikněte na moji obrazovce nebo řekněte číslo.
+u:(~pozdrav ) Zdravíčko. Vyberte si téma. a klikněte na moji obrazovku nebo řekněte číslo.
 
 u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} one {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_one)
 
@@ -22,6 +22,6 @@ u:({~ukazat} ["šest" "6" "číslo šest" "číslo 6" "šestka" "šestku" "Pod j
 
 u:({~ukazat} ["sedum" "sedům" "sedm"  "7" "číslo sedum" "sedmička" "sedmičku" "číslo sedům" "číslo sedm"  "číslo 7" "Co chystáme v Icuk Space Hradební" "Co chystáme v Icuk spejs Hradební" "spejs Hradební" "spejs"]) ~confirmation ^execute(FragmentExecutor, frag_screen_nine)
 
-u:({~ukazat} ["osum" "osům" "osm"  "8" "číslo osum" "číslo osům" "číslo osm" "osmička" "osmičku" "číslo 8" "Co dělá ICUK" "ICUK"]) ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
+#u:({~ukazat} ["osum" "osům" "osm"  "8" "číslo osum" "číslo osům" "číslo osm" "osmička" "osmičku" "číslo 8" "Co dělá ICUK" "ICUK"]) ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
