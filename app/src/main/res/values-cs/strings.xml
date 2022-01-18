@@ -4,8 +4,7 @@
     <string name="loading">Načítání</string>
     <string name="isMainFragment">Klikni na tlačítko nebo řekni číslo:</string>
     <string name="reset">Úvodní obrazovka</string>
-    <string name="fragmentTwo">Fragment 2</string>
-    <string name="fragmentOne">Fragment 1</string>
+    <string name="saySomething">Opakovat řeč</string>
 
     <!-- Hlavní nabídka -->
     <string name="fragmentThree">1. Má úvodní řeč</string>
@@ -27,7 +26,8 @@
     <string name="isFragmentNine">Kliknul jsi na Co dalšího plánujeme v Icuku</string>
     <string name="isFragmentTen">Kliknul jsi na Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
     <!-- fragment_two -->
-    <string name="saySomething">Opakovat řeč</string>
+    <string name="fragmentTwo">Fragment 2</string>
+    <string name="fragmentOne">Fragment 1</string>
     <string name="isFragmentOne">Totot jeFragment 1</string>
     <string name="isFragmentTwo">Toto je fragment 2</string>
 </resources>
