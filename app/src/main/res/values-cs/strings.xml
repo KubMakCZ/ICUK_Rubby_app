@@ -19,7 +19,7 @@
     <!-- Rozkliknute fragmenty -->
     <string name="isFragmentThree">Kliknul jsi na Má úvodní řeč</string>
     <string name="isFragmentFour">Kliknul jsi na Program před coffee break</string>
-    <string name="isFragmentFive">Kliknul jsi na Program po coffee breako</string>
+    <string name="isFragmentFive">Kliknul jsi na Program po coffee break</string>
     <string name="isFragmentSix">Kliknul jsi na Event sál</string>
     <string name="isFragmentSeven">Kliknul jsi na Work Space</string>
     <string name="isFragmentEight">Kliknul jsi na Kanceláře a zasedací místnosti k pronájmu</string>
@@ -28,6 +28,6 @@
     <!-- fragment_two -->
     <string name="fragmentTwo">Fragment 2</string>
     <string name="fragmentOne">Fragment 1</string>
-    <string name="isFragmentOne">Totot jeFragment 1</string>
+    <string name="isFragmentOne">Toto je Fragment 1</string>
     <string name="isFragmentTwo">Toto je fragment 2</string>
 </resources>
