@@ -8,7 +8,7 @@ u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} one {ple
 
 u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
 
-u:({~ukazat} ["1" "jedna" "jedná" "číslo jedná" "jednička" "jedničku" "číslo jedna" "číslo 1" "Má úvodní řeč"]) ~confirmation ^execute(FragmentExecutor, frag_screen_three)
+u:({~ukazat} ["1" "jedna" "jedná" "číslo jedná" "jednička" "jedničku" "číslo jedna" "číslo 1" "Kdo jsi" "Kdopak jsi" "Kdo si" "Má úvodní řeč" "Úvodní slovo" "Předávám Úvodní slovo" "můžeš rubby" "máš uvodní slovo" "ruby máš úvodní slovo"]) ~confirmation ^execute(FragmentExecutor, frag_screen_three)
 
 u:({~ukazat} ["2" "dvě" "číslo dva" "číslo 2" "dvojku" "dvojka" "dva" "Eventový sál" "Event" "Íventoví sál" "Íventový sál" "Ívent"]) ~confirmation ^execute(FragmentExecutor, frag_screen_four)
 
@@ -25,3 +25,5 @@ u:({~ukazat} ["sedum" "sedům" "sedm"  "7" "číslo sedum" "sedmička" "sedmičk
 #u:({~ukazat} ["osum" "osům" "osm"  "8" "číslo osum" "číslo osům" "číslo osm" "osmička" "osmičku" "číslo 8" "Co dělá ICUK" "ICUK"]) ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
+
+u:(["Řekni vtip" "řekni ftip"]) ^rand["A Bůh pravil. Noe udělej zálohu. Budu formátovat" "Víte, jak si tři programátoři vydělávají na živobytí? Jeden vytvoří virus, druhý antivirový program a třetí prostředí ve kterém to všechno funguje." " Víte co dělá windows na měsíci? Padá 6 krát pomaleji." "Doktor mi říkal, že mám po té dlouhé zimě oslabený organismus. Tak jsem se ptal v lékarně a nabídli mi beta karoten. Na to jim kašlu. Počkám si, až bude plná verze."] Ha. Ha. Ha.

@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.softbankrobotics.kmjni"
+        applicationId "com.kubmak.icuk_dod"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 114

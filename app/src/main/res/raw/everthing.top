@@ -23,3 +23,4 @@ proposal: %init I am now in the topic of the main fragment
     u:(~ukazat "Co dělá ICUK") ~confirmation ^execute(FragmentExecutor, frag_screen_ten)
 
    u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
+

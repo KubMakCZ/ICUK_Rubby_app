@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rubby_JNI</string>
+    <string name="app_name">Rubby_DOD_Digilab_0224</string>
     <string name="loading">Načítání</string>
     <string name="isMainFragment">Klikni na tlačítko nebo řekni číslo:</string>
     <string name="reset">Úvodní obrazovka</string>
@@ -8,23 +8,25 @@
     <string name="fragmentOne">Fragment 1</string>
 
     <!-- Hlavní nabídka -->
-    <string name="fragmentThree">1. Má úvodní řeč</string>
-    <string name="fragmentFour">2. Program před coffee break</string>
-    <string name="fragmentFive">3. Program po coffee break </string>
-    <string name="fragmentSix">4. Event sál </string>
-    <string name="fragmentSeven">5. Work Space</string>
-    <string name="fragmentEight">6. Kanceláře a zasedací místnosti k pronájmu</string>
-    <string name="fragmentNine">7. Co dalšího plánujeme v Icuku</string>
+    <string name="fragmentThree">1. Já jsem Rubby</string>
+    <string name="fragmentFour">2. Inovační centrum Ústeckého kraje</string>
+    <string name="fragmentFive">3. Ústecký kraj</string>
+    <string name="fragmentSix">4. UJEP </string>
+
+    <string name="fragmentSeven">5. Startup Academy</string>
+    <string name="fragmentEight">6. Praxe a stáže</string>
+    <string name="fragmentNine">7. Akce</string>
     <string name="fragmentTen">8. Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
 
     <!-- Rozkliknute fragmenty -->
-    <string name="isFragmentThree">Kliknul jsi na Má úvodní řeč</string>
-    <string name="isFragmentFour">Kliknul jsi na Program před coffee break</string>
-    <string name="isFragmentFive">Kliknul jsi na Program po coffee breako</string>
-    <string name="isFragmentSix">Kliknul jsi na Event sál</string>
-    <string name="isFragmentSeven">Kliknul jsi na Work Space</string>
-    <string name="isFragmentEight">Kliknul jsi na Kanceláře a zasedací místnosti k pronájmu</string>
-    <string name="isFragmentNine">Kliknul jsi na Co dalšího plánujeme v Icuku</string>
+    <string name="isFragmentThree">Ahoj! Já jsem Rubby</string>
+    <string name="isFragmentFour">Kliknul jsi na Inovační centrum Ústeckého kraje</string>
+    <string name="isFragmentFive">Kliknul jsi na Ústecký kraj</string>
+    <string name="isFragmentSix">Kliknul jsi UJEP</string>
+
+    <string name="isFragmentSeven">Kliknul jsi na Startup Academy</string>
+    <string name="isFragmentEight">Kliknul jsi na Praxe a stáže</string>
+    <string name="isFragmentNine">Kliknul jsi na Akce</string>
     <string name="isFragmentTen">Kliknul jsi na Projekt Podpora a rozvoj inovačního prostředí v Ústeckém kraji</string>
     <!-- fragment_two -->
     <string name="saySomething">Opakovat řeč</string>

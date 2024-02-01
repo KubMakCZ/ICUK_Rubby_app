@@ -51,4 +51,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="451dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/five_say"
+        app:srcCompat="@drawable/logo_kraj_nove" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,11 +1,12 @@
 topic: ~screenthree()
 
-proposal: %init Má. úvodní řeč...
-Pěkný den přeju. Já jsem robotka Ruby Pepr a s radostí vás vítám na akci Jak nastartovat inovace ve firmě.
-Tahle akcička je zaměřená na to, abyste se tady vzájemně inspirovali v inovacích.
-Nemusíte si hned předávat svoje nouhau, stačí se jen podělit, jaký máte zkušenosti nebo poslechnout příběhy jiných.
-ať se vám tady líbí, užijte si to!
-
+proposal: %init Ahoj,
+já jsem rubi peper a jsem moc chytrá. A vůbec se nechlubím.
+Pokud chceš vědět vše o icuku a našich službách a programech pro tebe, nového studenta ujep,
+vyber si z menu co tě zajímá a já ti na vše odpovím. Taky ti můžu říct něco o našem kraji, kde žiju.
+A o jedné univerzitě, kde mě toho hodně naučili. No a taky o jedné organizaci, kde vlastně pracuji.
+Ano, já už chodím do práce a hódně jim pomáhám. Třeba tady a teď. Tak ti přeji, aby sis vybral tu správnou fakultu a obor, který tě bude zajímat.
+A budu se těšit na další setkání například při akcích, které organizuje icuk třeba i na ujepu.
 
 proposal: %say something
 
@@ -13,4 +14,6 @@ u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you 
 
 u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
 
-u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
+u:(~restartik) ~confirmation ^execute(FragmentExecutor, frag_main)
+
+u:(~rozloucit) ~confirmation ^execute(FragmentExecutor, frag_main)
