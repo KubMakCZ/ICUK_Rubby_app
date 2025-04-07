@@ -1,11 +1,11 @@
 topic: ~screenthree()
 
-proposal: %init Má. úvodní řeč...
-Děkuju moc za slovo... TAKOVÁ ČEST! Až se mi dráty klepou trémou.
-Takže dobrý den všem! Já jsem RUBY PEPR! a ráda bych vás přivítala v icuk spejs hradební. v sídle inovačního centra ústeckého kraje. a dalších partnerů.
-Dneska vám řeknu, co u nás všechno najdete. co byste mohli také využít. anebo jak s námi spolupracovat. Je to tu moc pěkné. Co myslíte?
-Vyberte si z nabídky na mé obrazovce, co vás zajímá, a vydržte až do konce. Povím Vám spoustu zajímavých typů a informací.
-
+proposal: %init Ahoj,všichní!
+já jsem Rubby Pepper. Vaše zvídavá, chytrá a přátelská robotka z Ústeckého kraje.
+A nebojte, nevychloubám se. Teda možná jen trošku. Jestli tě zajímá ICUK, naše služby a programy pro studenty,
+nebo chceš vědět víc o tom, co všechno ti může nabídnout Ústecký kraj, stačí si vybrat v menu a já ti hned všechno povím.
+Budu se těšit, že se potkáme na některé z akcí.
+Tak klikni, nebo se zeptej buď mně nebo kolegů, kteří jsou tady se mnou.
 
 proposal: %say something
 
@@ -13,4 +13,6 @@ u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you 
 
 u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
 
-u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
+u:(~restartik) ~confirmation ^execute(FragmentExecutor, frag_main)
+
+u:(~rozloucit) ~confirmation ^execute(FragmentExecutor, frag_main)

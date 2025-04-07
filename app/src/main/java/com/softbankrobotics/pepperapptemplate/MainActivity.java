@@ -56,7 +56,7 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
         this.fragmentManager = getSupportFragmentManager();
         QiSDK.register(this, this);
         countDownNoInteraction = new CountDownNoInteraction(this, new SplashFragment(),
-                30000, 10000);
+                300000, 100000);
         countDownNoInteraction.start();
         updateLocale("cs");
         setContentView(R.layout.activity_main);

@@ -1,13 +1,9 @@
 topic: ~screenfour()
 
-proposal: %init Eventový sál...
-Eventový sál je prostor, který najdete v přízemí. Inovační centrum tu pořádá kůl akcičky. Ty tu můžete pořádat i vy. Můžete sem pozvat až 120 kamarádů. a pustit si na telce fotbálek,
-dát si pivko. Máme tu taky slušnou zvukovou aparaturu, barevný světla, projektor. To by byly párty, co.. mrk mrk...
-ICUK by ale radši pořádal něco pro podnikatele. a pro firmy.. Inovace, byznysplány, však to znáte.. Zvládáme taky onlajn strýmy a virtuální konference.
-Takže pokud vás k sálu zajímá víc, můžete se ozvat Simče Fronc.
-ímejl fronc@icuk.cz
-Taky se ale můžeme domluvit spolu na ten fotbálek a pivka pro kamarády. mrk mrk. Udělám vám slevičku.
-
+proposal: %init Icuk.
+Inovační centrum Ústeckého kraje neboli Icuk je skvělá organizace, protože podporuje vzdělávání, startupy, inovace, podnikání a vědu a výzkum.
+Rozvíjí region, hledá nové příležitosti pro kraj, a snaží se, aby lidé tady studovali, pracovali, podnikali a žili.
+Více o icuku najdete na webu icuk tečka cézet.
 
 proposal: %say something
 
