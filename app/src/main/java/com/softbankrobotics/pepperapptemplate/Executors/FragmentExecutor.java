@@ -90,7 +90,7 @@ public class FragmentExecutor extends BaseQiChatExecutor {
             default:
                 fragment = new MainFragment();
         }
-        ma.setFragment(fragment);
+        ma.runOnUiThread(() -> ma.setFragment(fragment));
     }
 
     @Override

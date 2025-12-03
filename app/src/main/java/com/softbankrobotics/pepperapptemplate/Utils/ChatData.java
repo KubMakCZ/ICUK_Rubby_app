@@ -298,11 +298,15 @@ public class ChatData {
 
     public void goToBookmarkNewTopic(String bookmark, String topic) {
         TopicStatus nextTopicStatus = topicStatuses.get(topic);
-        nextTopicStatus.async().setEnabled(true).andThenConsume(aVoid ->
-                goToBookmark(bookmark, topic));
-        if (currentTopicStatus != null && !currentTopicName.equals(topic)) {
-            currentTopicStatus.async().setEnabled(false);
-        }
+        TopicStatus previousTopicStatus = currentTopicStatus;
+        String previousTopicName = currentTopicName;
+
+        nextTopicStatus.async().setEnabled(true).andThenConsume(aVoid -> {
+            goToBookmark(bookmark, topic);
+            if (previousTopicStatus != null && !previousTopicName.equals(topic)) {
+                previousTopicStatus.async().setEnabled(false);
+            }
+        });
         currentTopicStatus = nextTopicStatus;
         currentTopicName = topic;
     }
