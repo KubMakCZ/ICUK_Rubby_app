@@ -36,7 +36,7 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
 
     private static final String TAG = "MSI_MainActivity";
     //topicNames needs to be updated wih the topics names of the topics in the raw resource dir
-    private final List<String> topicNames = Arrays.asList("main", "screenone", "screentwo", "concepts","screenthree", "screenfour","screenfive","screensix","screenseven","screeneight","screennine","screenten");
+    private final List<String> topicNames = Arrays.asList("main", "screenone", "screentwo", "concepts", "everthing", "screenthree", "screenfour","screenfive","screensix","screenseven","screeneight","screennine","screenten");
     private FragmentManager fragmentManager;
     private QiContext qiContext;
     private ChatData currentChatBot, englishChatBot;

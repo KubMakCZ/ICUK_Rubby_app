@@ -303,7 +303,10 @@ public class ChatData {
 
         nextTopicStatus.async().setEnabled(true).andThenConsume(aVoid -> {
             goToBookmark(bookmark, topic);
-            if (previousTopicStatus != null && !previousTopicName.equals(topic)) {
+            // Keep "main" topic always enabled — it contains global navigation commands.
+            // Only disable previous topic if it's not "main".
+            if (previousTopicStatus != null && !previousTopicName.equals(topic)
+                    && !"main".equals(previousTopicName)) {
                 previousTopicStatus.async().setEnabled(false);
             }
         });
@@ -323,9 +326,11 @@ public class ChatData {
                 Log.d(TAG, "going to bookmark " + bookmark + " in topic : " + topic);
                 Map<String, Bookmark> tmp = bookmarks.get(topic);
 
-                cancelCurrentGotoBookmarkFuture().thenConsume(uselessFuture ->
-                        currentGotoBookmarkFuture = qiChatbot.async().goToBookmark(tmp.get(bookmark),
-                                AutonomousReactionImportance.HIGH, AutonomousReactionValidity.IMMEDIATE));
+                if (currentGotoBookmarkFuture != null) {
+                    currentGotoBookmarkFuture.cancel(true);
+                }
+                currentGotoBookmarkFuture = qiChatbot.async().goToBookmark(tmp.get(bookmark),
+                        AutonomousReactionImportance.HIGH, AutonomousReactionValidity.IMMEDIATE);
             }
         } else {
             Log.e(TAG, "could not find topic: " + topic + " in topicNames");
