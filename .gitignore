@@ -39,3 +39,13 @@ ehthumbs.db
 Thumbs.db
 fragment_icuk.jpg
 fragment_main.jpg
+
+# JVM crash logs
+hs_err_pid*.log
+replay_pid*.log
+
+# Build output
+/build/
+
+# Backup files
+*.bak.xml
