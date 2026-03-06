@@ -1,16 +1,10 @@
 topic: ~screeneight()
 
-proposal: %init ICUK bůtkemp...
-Intenzivní inovační stáž přímo na icuku. Na týden vystoupíš z teoretické části a zažiješ opravdovou praxi.
-Reálné výzvy, zajímavá témata, brejnstorming, týmová práce, dizajn finking, podnikavost a hry. To vše najdeš v tomto unikátním programu.
- Na konci je prezentace projektů a každý účastník se může chlubit certifikátem.
-Fakulty jsou o bútkempu informovaní a na vaše požádání by vás z výuky měli bez problémů uvolnit. A to je super, ne?
-
-
-proposal: %say something
-
-u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
-
-u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+proposal: %init Marketing Prakticky.
+Na fakultě sociálně ekonomické už nějakou dobu spolupracujeme s doktorkou Jánskou na jejím předmětu Marketing.
+Předmět je zcela praktický. Na začátku se rozdělíte do týmů a dostanete zadání od reálné firmy z našeho kraje.
+K dispozici budeš mít celý semestr odborníka na marketing, aby pomáhal při řešení zadání.
+Na konci semestru nebude zkouška, ale představení vyřešení zadání před porotou.
+Za mě je to super možnost, jak se naučit na reálné fungující firmě, jak pomocí marketingu vyřešit potřeby firmy.
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

@@ -1,17 +1,9 @@
 topic: ~screensix()
 
-proposal: %init UJEP.
-UJEP je zkratka, to víme. A znamená Univerzita Jana Evangelisty Purkyně.
-Nachází se přímo v Ústí nad Labem a je fakt veliká. Kamarádi z přírodovědecké fakulty mě toho strašně moc naučili.
-Těch fakult má univerzita hódně. A taky má všelijaké programy, dělají vědu a výzkum a spolupracují, s kde kým na mezinárodní úrovni.
-A my z inovačního centra s univerzitou spolupracujeme. Máme dokonce společné programy a předměty.
-Koukni na ujep tečka cézet. Než bych vám to já vysvětlila a řekla, mohly by se mi zapálit moje už tak dost tenké kabely.
-
-
-proposal: %say something
-
-u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
-
-u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+proposal: %init ICUK bůtkemp.
+Intenzivní inovační stáž přímo na icuku. Na týden vystoupíš z teoretické části a zažiješ opravdovou praxi.
+Reálné výzvy, zajímavá témata, brejnstorming, týmová práce, dizajn finking, podnikavost a hry. To vše najdeš v tomto unikátním programu.
+Na konci je prezentace projektů a každý účastník se může chlubit certifikátem.
+Fakulty jsou o bútkempu informovaní a na vaše požádání by vás z výuky měli bez problémů uvolnit. A to je super, ne?
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

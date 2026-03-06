@@ -1,20 +1,10 @@
 topic: ~screenseven()
 
-proposal: %init ICUK pro vysokoškoláky.
-Mám pro tebe pár tipů, co můžeš jako student vysoké školy zažít s Inovačním centrem Ústeckého kraje.
-Na fakultě sociálně ekonomické vedeme praktickou část předmětu Marketing.
- Dva krát ročně vyhlašujeme a vedeme icuk bútkemp což je týdenní intenzivní stáž na icuku.
- Řeší se reálné téma reálné firmy pomocí metody dizajn finking.
- Od zimního semestru připravujeme univerzitní inkubátor pro studenty s nápadem na vlastní podnikání.
- V prostoru cajku pořádáme motivační akce se známými osobnostmi nejen z našeho kraje.
-Na icuku dále najdeš různé soutěžní, vzdělávací a motivační akce. Sleduj náš Instagram a nic ti neujde.
-
-
-
-proposal: %say something
-
-u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
-
-u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+proposal: %init Univerzitní inkubátor.
+Pokud máš nápad na vlastní podnikání a nevíš kam s tím, my v icuku ti s tím pomůžeme.
+Naučíme tě jak udělat z nápadu projekt, který bude fungovat. Stačí ti na to zimní semestr a chuť se rozvíjet.
+Deset praktických vorkšopů, mentoři, odborníci z praxe a na konci představení projektů.
+Provedeme tě tajemstvím biznis plánu, financemi, marketingem, sociálními sítěmi a prezentačními dovednostmi, abys uměl svůj plán představit bance nebo investorům.
+Připoj se a možná bude tvůj plán skvělým startapem.
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

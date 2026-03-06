@@ -1,16 +1,8 @@
+# ZÁLOHA – původní šablonový topic screenone (není načítán do aplikace)
+# Pokud tento topic potřebuješ, přidej "screennine" do topicNames v MainActivity.java
+
 topic: ~screennine()
 
-proposal: %init Univerzitní inkubátor...
-Pokud máš nápad na vlastní podnikání a nevíš kam s tím, my v icuku ti s tím pomůžeme.
-Naučíme tě jak udělat z nápadu projekt který bude fungovat. Stačí ti na to zimní semestr, a chuť se rozvíjet.
-Deset praktických vorkšopů, mentoři, odborníci z praxe a na konci představení projektů.
-Provedeme tě tajemstvím biznis plánu, financemi, marketingem, sociálními sítěmi a prezentačními dovednostmi, abys uměl svůj plán představit bance nebo investorům.
-Připoj se a možná bude tvůj plán skvělým startapem.
-
-proposal: %say something
-
-u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
-
-u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+proposal: %init Tato obrazovka je záložní a nemá obsah.
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

@@ -46,21 +46,21 @@ public class    MainFragment extends Fragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         view.findViewById(R.id.main_button_frag_three).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenThreeFragment()));
+                (v) -> ma.setFragment(new ScreenOneFragment()));
         view.findViewById(R.id.main_button_frag_four).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenFourFragment()));
+                (v) -> ma.setFragment(new ScreenTwoFragment()));
         view.findViewById(R.id.main_button_frag_five).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenFiveFragment()));
+                (v) -> ma.setFragment(new ScreenThreeFragment()));
         view.findViewById(R.id.main_button_frag_six).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenSixFragment()));
+                (v) -> ma.setFragment(new ScreenFourFragment()));
         view.findViewById(R.id.main_button_frag_seven).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenSevenFragment()));
+                (v) -> ma.setFragment(new ScreenFiveFragment()));
         view.findViewById(R.id.main_button_frag_eight).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenEightFragment()));
+                (v) -> ma.setFragment(new ScreenSixFragment()));
         view.findViewById(R.id.main_button_frag_nine).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenNineFragment()));
+                (v) -> ma.setFragment(new ScreenSevenFragment()));
         view.findViewById(R.id.main_button_frag_ten).setOnClickListener(
-                (v) -> ma.setFragment(new ScreenTenFragment()));
+                (v) -> ma.setFragment(new ScreenEightFragment()));
     }
 
 }

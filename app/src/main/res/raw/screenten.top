@@ -1,17 +1,14 @@
+# ZÁLOHA – původní šablonový topic screentwo s VariableExecutor demem (není načítán do aplikace)
+# Pokud tento topic potřebuješ, přidej "screenten" do topicNames v MainActivity.java
+
 topic: ~screenten()
 
-proposal: %init Marketing Prakticky..
-Na fakultě sociálně ekonomické už nějakou dobu spolupracujeme s doktorkou Jánskou na jejím předmětu Marketing.
-Předmět je zcela praktický. Na začátku se rozdělíte do týmů, a dostanete zadání od reálné firmy z našeho kraje.
-K dispozici budeš mít celý semestr odborníka na marketing, aby pomáhal při řešení zadání.
-Na konci semestru nebude zkouška ale představení vyřešení zadání před porotou.
-Za mě je to super možnost, jak se naučit na reálné fungující firmě, jak pomocí marketingu vyřešit potřeby firmy.
+proposal: %init Ukázka proměnné. Aktuálně nastavená hodnota je $qiVariable
 
+concept:(hodnoty)[Pepper Nao]
 
-proposal: %say something
+u:(["řekni hodnotu" "jaká je hodnota" "co je nastaveno"]) ~confirmation, hodnota proměnné je $qiVariable
 
-u:({["[~i_want_to ~i_need_to] you to" "{can} you {should}"] "{I would} like you to"} say something {please}) ^enableThenGoto(say)
-
-u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} two {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+u:(["nastav na _~hodnoty" "změň na _~hodnoty"]) $qiVariable=$1 ^execute(VariableExecutor, qiVariable, $qiVariable) ~confirmation, nastavil jsem hodnotu na $qiVariable
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

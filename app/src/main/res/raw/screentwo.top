@@ -1,17 +1,8 @@
 topic: ~screentwo()
 
-proposal: %init this is the fragment number two, the  key variable is set to $qiVariable
+proposal: %init Icuk.
+Inovační centrum Ústeckého kraje neboli Icuk je skvělá organizace, protože podporuje vzdělávání, startupy, inovace, podnikání a vědu a výzkum.
+Rozvíjí region, hledá nové příležitosti pro kraj, a snaží se, aby lidé tady studovali, pracovali, podnikali a žili.
+Více o icuku najdete na webu icuk tečka cézet.
 
-concept:(values)[Pepper Nao]
-
-u:(["{[~i_want_to ~i_need_to]} {know} the {key} variable {please}"
-    "["tell me" "what is" "give me"] the value of the [{key} variable]"
-    "what's the value {of ["it" "the {key} variable"]}"]) ~confirmation, the value of the key variable is $qiVariable
-#
-u:(["[set update] ["the [key variable variable]" "it"] to _~values"]) $qiVariable=$1  ^execute(VariableExecutor, qiVariable, $qiVariable) ~confirmation, I updated it to $qiVariable
-
-u:({[~i_want_to ~i_need_to "set" "put" "goto"]} {the} fragment {number} one {please}) ~confirmation ^execute(FragmentExecutor, frag_screen_one)
-
-u:(~restartik) ~confirmation ^execute(FragmentExecutor, frag_main)
-
-u:(~rozloucit) ~confirmation ^execute(FragmentExecutor, frag_main)
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
