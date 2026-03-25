@@ -1,0 +1,6 @@
+topic: ~dynamic()
+
+proposal: %init $tileSpeech
+proposal: %say $tileSpeech
+
+u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
