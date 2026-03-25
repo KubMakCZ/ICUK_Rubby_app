@@ -1,8 +1,0 @@
-topic: ~screentwo()
-
-proposal: %init Icuk.
-Inovační centrum Ústeckého kraje neboli Icuk je skvělá organizace, protože podporuje vzdělávání, startupy, inovace, podnikání a vědu a výzkum.
-Rozvíjí region, hledá nové příležitosti pro kraj, a snaží se, aby lidé tady studovali, pracovali, podnikali a žili.
-Více o icuku najdete na webu icuk tečka cézet.
-
-u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
