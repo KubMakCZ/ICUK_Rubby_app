@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="fill_parent"
-    android:visibility="visible">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/main_text"
@@ -19,98 +18,28 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-    <Button
-        android:id="@+id/main_button_frag_three"
-        android:layout_width="451dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="437dp"
-        android:text="@string/fragmentThree"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/main_button_frag_four"
-        app:layout_constraintHorizontal_bias="0.0"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tile_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintTop_toBottomOf="@id/main_text"
+        app:layout_constraintBottom_toTopOf="@id/imageView13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_text" />
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/main_button_frag_four"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/fragmentFour"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="375dp"
+        android:layout_height="144dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_text" />
-
-    <Button
-        android:id="@+id/main_button_frag_five"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="4dp"
-        android:text="@string/fragmentFive"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/main_button_frag_six"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_three" />
-
-    <Button
-        android:id="@+id/main_button_frag_seven"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:text="@string/fragmentSeven"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/main_button_frag_six"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_five" />
-
-    <Button
-        android:id="@+id/main_button_frag_six"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:text="@string/fragmentSix"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_four" />
-
-    <Button
-        android:id="@+id/main_button_frag_eight"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:text="@string/fragmentEight"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_six" />
-
-    <Button
-        android:id="@+id/main_button_frag_nine"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:text="@string/fragmentNine"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_seven" />
-
-    <Button
-        android:id="@+id/main_button_frag_ten"
-        android:layout_width="450dp"
-        android:layout_height="60dp"
-        android:text="@string/fragmentTen"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_eight" />
+        app:layout_constraintTop_toBottomOf="@id/tile_recycler_view"
+        app:layout_constraintVertical_bias="0.663"
+        app:srcCompat="@drawable/logo_kraj_nove" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -118,7 +47,7 @@
         android:layout_height="109dp"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="8dp"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="parent"
@@ -137,18 +66,5 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView13"
         app:layout_constraintVertical_bias="0.529"
         app:srcCompat="@drawable/icuk" />
-
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="375dp"
-        android:layout_height="144dp"
-        android:layout_marginBottom="42dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_button_frag_six"
-        app:layout_constraintVertical_bias="0.663"
-        app:srcCompat="@drawable/logo_kraj_nove" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
