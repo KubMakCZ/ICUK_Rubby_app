@@ -216,7 +216,9 @@ public class ChatData {
      */
 
     public void setupQiVariables(List<String> qiVariablesNames) {
-        variables = new HashMap<>();
+        if (variables == null) {
+            variables = new HashMap<>();
+        }
         for (String qiVariableName : qiVariablesNames) {
             variables.put(qiVariableName, qiChatbot.variable(qiVariableName));
         }
@@ -229,7 +231,9 @@ public class ChatData {
      */
 
     public void setupQiVariable(String qiVariablesName) {
-        variables = new HashMap<>();
+        if (variables == null) {
+            variables = new HashMap<>();
+        }
         variables.put(qiVariablesName, qiChatbot.variable(qiVariablesName));
     }
 
