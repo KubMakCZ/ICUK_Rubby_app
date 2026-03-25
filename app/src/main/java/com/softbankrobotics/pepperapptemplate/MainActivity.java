@@ -16,10 +16,9 @@ import com.aldebaran.qi.sdk.RobotLifecycleCallbacks;
 import com.aldebaran.qi.sdk.design.activity.RobotActivity;
 import com.aldebaran.qi.sdk.design.activity.conversationstatus.SpeechBarDisplayStrategy;
 import com.aldebaran.qi.sdk.object.conversation.QiChatExecutor;
-import com.aldebaran.qi.sdk.object.conversation.TopicStatus;
 import com.aldebaran.qi.sdk.object.humanawareness.HumanAwareness;
 import com.softbankrobotics.pepperapptemplate.Executors.FragmentExecutor;
-import com.softbankrobotics.pepperapptemplate.Executors.VariableExecutor;
+import com.softbankrobotics.pepperapptemplate.Fragments.DynamicScreenFragment;
 import com.softbankrobotics.pepperapptemplate.Fragments.LoadingFragment;
 import com.softbankrobotics.pepperapptemplate.Fragments.MainFragment;
 import com.softbankrobotics.pepperapptemplate.Fragments.SplashFragment;
@@ -35,18 +34,17 @@ import java.util.Map;
 public class MainActivity extends RobotActivity implements RobotLifecycleCallbacks {
 
     private static final String TAG = "MSI_MainActivity";
-    //topicNames needs to be updated wih the topics names of the topics in the raw resource dir
-    private final List<String> topicNames = Arrays.asList("main", "screenone", "screentwo", "concepts", "screenthree", "screenfour", "screenfive", "screensix", "screenseven", "screeneight");
+    private final List<String> topicNames = Arrays.asList("main", "dynamic", "concepts");
     private FragmentManager fragmentManager;
     private QiContext qiContext;
-    private ChatData currentChatBot, englishChatBot;
-    private String currentFragment, currentTopicName;
-    private TopicStatus currentTopicStatus;
+    private ChatData currentChatBot;
+    private String currentFragment;
     private CountDownNoInteraction countDownNoInteraction;
     private HumanAwareness humanAwareness;
     private android.content.res.Configuration config;
     private Resources res;
     private Future<Void> chatFuture;
+    private List<TileItem> tileItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,15 +58,11 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
         countDownNoInteraction.start();
         updateLocale("cs");
         setContentView(R.layout.activity_main);
-        Log.d(TAG, "test");
 
+        // Parse content at creation time (before robot focus)
+        tileItems = ContentParser.parse(this);
+        Log.d(TAG, "Parsed " + tileItems.size() + " tiles from content.md");
     }
-
-    /**
-     * Sets the locale for this activity
-     *
-     * @param strLocale the string used to build the new locale
-     */
 
     private void updateLocale(String strLocale) {
         Locale locale = new Locale(strLocale);
@@ -78,19 +72,18 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
 
     @Override
     public void onRobotFocusGained(QiContext qiContext) {
-        Log.d(TAG, "onRobotFocusedGained");
+        Log.d(TAG, "onRobotFocusGained");
         this.qiContext = qiContext;
-        englishChatBot = new ChatData(this, qiContext, new Locale("cs"), topicNames, true);
+        currentChatBot = new ChatData(this, qiContext, new Locale("cs"), topicNames, true);
+
         Map<String, QiChatExecutor> executors = new HashMap<>();
         executors.put("FragmentExecutor", new FragmentExecutor(qiContext, this));
-        executors.put("VariableExecutor", new VariableExecutor(qiContext, this));
-        englishChatBot.setupExecutors(executors);
-        englishChatBot.setupQiVariable("qiVariable");
-        currentChatBot = englishChatBot;
+        currentChatBot.setupExecutors(executors);
+        currentChatBot.setupQiVariable("tileSpeech");
+
         currentChatBot.chat.async().addOnStartedListener(() -> {
-            setQiVariable("qiVariable", "Pepper"); // this is done here because the chatBot needs to be running for this to work.
             runOnUiThread(() -> {
-                setSpeechBarDisplayStrategy(SpeechBarDisplayStrategy.ALWAYS); // Disable overlay mode for the rest of the app.
+                setSpeechBarDisplayStrategy(SpeechBarDisplayStrategy.ALWAYS);
                 setFragment(new MainFragment());
             });
         });
@@ -98,7 +91,7 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
             countDownNoInteraction.reset();
         });
         chatFuture = currentChatBot.chat.async().run();
-        humanAwareness = getQiContext().getHumanAwareness();
+        humanAwareness = qiContext.getHumanAwareness();
         humanAwareness.async().addOnEngagedHumanChangedListener(engagedHuman -> {
             if (getFragment() instanceof SplashFragment) {
                 if (engagedHuman != null) {
@@ -112,7 +105,9 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
 
     @Override
     public void onRobotFocusLost() {
-        humanAwareness.async().removeAllOnEngagedHumanChangedListeners();
+        if (humanAwareness != null) {
+            humanAwareness.async().removeAllOnEngagedHumanChangedListeners();
+        }
         this.qiContext = null;
     }
 
@@ -137,7 +132,7 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
     @Override
     protected void onResume() {
         super.onResume();
-        setSpeechBarDisplayStrategy(SpeechBarDisplayStrategy.OVERLAY); // We don't want to see the speech bar while loading
+        setSpeechBarDisplayStrategy(SpeechBarDisplayStrategy.OVERLAY);
         this.setFragment(new LoadingFragment());
     }
 
@@ -151,24 +146,16 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
         }
     }
 
-    /**
-     * updates the value of the qiVariable
-     *
-     * @param variableName the name of the variable
-     * @param value        the value that needs to be set
-     */
-
-    public void setQiVariable(String variableName, String value) {
-        Log.d(TAG, "size va : " + currentChatBot.variables.size());
-        currentChatBot.variables.get(variableName).async().setValue(value);
-    }
-
     public ChatData getCurrentChatBot() {
         return currentChatBot;
     }
 
     public QiContext getQiContext() {
         return qiContext;
+    }
+
+    public List<TileItem> getTileItems() {
+        return tileItems;
     }
 
     public Integer getThemeId() {
@@ -184,20 +171,24 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
         return fragmentManager.findFragmentByTag("currentFragment");
     }
 
-    /**
-     * Change the fragment displayed by the placeholder in the main activity, and goes to the
-     * bookmark init in the topic assigned to this fragment
-     *
-     * @param fragment the fragment to display
-     */
-
     public void setFragment(Fragment fragment) {
         currentFragment = fragment.getClass().getSimpleName();
-        String topicName = currentFragment.toLowerCase().replace("fragment", "");
-        if (!(fragment instanceof LoadingFragment) && !(fragment instanceof SplashFragment)) {
-            this.currentChatBot.goToBookmarkNewTopic("init", topicName);
+
+        if (fragment instanceof DynamicScreenFragment) {
+            int index = fragment.getArguments().getInt("tile_index");
+            TileItem tile = tileItems.get(index);
+            // Chain: set variable THEN navigate to bookmark (avoid race condition)
+            currentChatBot.variables.get("tileSpeech").async()
+                    .setValue(tile.getSpeechText())
+                    .andThenConsume(aVoid -> {
+                        currentChatBot.goToBookmarkNewTopic("init", "dynamic");
+                    });
+        } else if (!(fragment instanceof LoadingFragment) && !(fragment instanceof SplashFragment)) {
+            String topicName = currentFragment.toLowerCase().replace("fragment", "");
+            currentChatBot.goToBookmarkNewTopic("init", topicName);
         }
-        Log.d(TAG, "Transaction for fragment : " + fragment.getClass().getSimpleName());
+
+        Log.d(TAG, "Transaction for fragment: " + currentFragment);
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.setCustomAnimations(R.anim.enter_fade_in_right, R.anim.exit_fade_out_left,
                 R.anim.enter_fade_in_left, R.anim.exit_fade_out_right);
@@ -206,4 +197,3 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
         transaction.commit();
     }
 }
-
