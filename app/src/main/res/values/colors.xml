@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Coinbase Design System Colors -->
+    <color name="colorPrimary">#0052ff</color>
+    <color name="colorPrimaryDark">#003ecc</color>
+    <color name="colorAccent">#0052ff</color>
 
-    <!-- android defaults -->
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="cb_blue">#0052ff</color>
+    <color name="cb_blue_active">#003ecc</color>
+    <color name="cb_ink">#0a0b0d</color>
+    <color name="cb_body">#5b616e</color>
+    <color name="cb_muted">#7c828a</color>
+    <color name="cb_hairline">#dee1e6</color>
+    <color name="cb_canvas">#ffffff</color>
+    <color name="cb_surface">#f7f7f7</color>
 
-    <!-- general purpose colors -->
     <color name="white">#FFFFFF</color>
     <color name="black">#000000</color>
-
 </resources>
