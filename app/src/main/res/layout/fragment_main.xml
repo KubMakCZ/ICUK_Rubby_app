@@ -1,167 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/cb_surface"
+    android:orientation="vertical"
     android:padding="24dp">
 
+    <!-- HEADER -->
     <TextView
         android:id="@+id/main_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp"
         android:gravity="center"
         android:text="@string/isMainFragment"
         android:textColor="@color/cb_ink"
-        android:textSize="44sp"
-        android:textStyle="normal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="44sp" />
 
-    <!-- Grid pro tlacitka -->
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:columnCount="2"
-        android:rowCount="4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/main_text">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_three"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentThree"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_four"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentFour"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_five"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentFive"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_six"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentSix"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_seven"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentSeven"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_eight"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentEight"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_nine"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentNine"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/main_button_frag_ten"
-            android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_margin="12dp"
-            android:layout_columnWeight="1"
-            android:background="@drawable/bg_card_menu"
-            android:text="@string/fragmentTen"
-            android:textAllCaps="false"
-            android:textColor="@color/cb_ink"
-            android:textSize="24sp" />
-
-    </GridLayout>
-
+    <!-- GRID WITH WEIGHTS -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- ROW 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_three"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentThree"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_four"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentFour"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <!-- ROW 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_five"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentFive"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_six"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentSix"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <!-- ROW 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_seven"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentSeven"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_eight"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentEight"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <!-- ROW 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_nine"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentNine"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/main_button_frag_ten"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_menu"
+                android:text="@string/fragmentTen"
+                android:textAllCaps="false"
+                android:textColor="@color/cb_ink"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- LOGOS AT BOTTOM -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
-        android:layout_marginBottom="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="200dp"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:layout_marginEnd="32dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/logo_ujep" />
+            android:src="@drawable/logo_ujep" />
 
         <ImageView
             android:id="@+id/imageView13"
             android:layout_width="200dp"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:layout_marginEnd="32dp"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/logo_kraj_nove" />
+            android:src="@drawable/logo_kraj_nove" />
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="200dp"
-            android:layout_height="80dp"
+            android:layout_height="match_parent"
             android:scaleType="centerInside"
-            app:srcCompat="@drawable/icuk" />
+            android:src="@drawable/icuk" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
