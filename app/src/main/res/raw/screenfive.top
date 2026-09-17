@@ -1,6 +1,6 @@
 topic: ~screenfive()
 
-proposal: %init Jestli chodíš na druhý stupeň základky, mám pro tebe hromadu tipů. Akademie nápadů je super pro každého, kdo má nápad a chuť ho pořádně rozjet. K vám do školy může přijet i pořádný workshop nebo celý projektový den. Vybereš si z víc než třiceti témat, od podnikání přes technologie až po online svět, a je to úplně zadarmo. Když máš rád soutěžení, tak zkus ideathony, nebo se přihlas s třídou na Podkrušnohorský veletrh fiktivních firem, kde můžeš nakupovat od středoškolských firem za hromadu fiktivních peněz. A když máš rád velké akce plné lidí, nezapomeň na festival Creative Minds nebo veletrh MAKER FEST. Nuda tu prostě neexistuje.
+proposal: %init Jestli chodíš na druhý stupeň základky, mám pro tebe hromadu tipů. Akademie nápadů je super pro každého, kdo má nápad a chuť ho pořádně rozjet. K vám do školy může přijet i pořádný workshop nebo celý projektový den. Vybereš si z víc než třiceti témat, od podnikání přes technologie až po online svět, a je to úplně zadarmo. Když máš rád soutěžení, tak zkus ideathony, nebo se přihlas s třídou na Podkrušnohorský veletrh fiktivních firem, kde můžeš nakupovat od středoškolských firem za hromadu fiktivních peněz. A když máš rád velké akce plné lidí, nezapomeň na festival Kreativ Majnds nebo veletrh Mejkr fest. Nuda tu prostě neexistuje.
 
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

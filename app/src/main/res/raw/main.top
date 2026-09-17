@@ -26,4 +26,3 @@ u:(["řekni vtip" "řekni ftip" "sranda" "ftip" "vtip" "pobav mě" "pobav nás" 
 
 u:(["jaké je počasí" "jaké je venku počasí" "jaké bude počasí" "co říká předpověď" "jak je venku" "prší venku" "svítí slunce"]) Bohužel ještě neumím číst z internetu, jaké je počasí. Ale moje senzory říkají, že tady uvnitř je příjemně teplo!
 
-u:(e:Dialog/NotUnderstood) ^rand["Tohle zní jako otázka na Google Gemini! Já jsem ale lokální robotka zaměřená hlavně na Inovační centrum a školy v Ústeckém kraji. Zeptejte se mě raději na to." "Na tuhle otázku bohužel neznám odpověď, nejsem připojená na Google. Ale moc ráda vám povím něco o inovačním centru Í cuk, nebo univerzitě Ujep." "To je zajímavé téma, ale moje paměť je plná hlavně informací o Ústeckém kraji a inovacích. Co by vás zajímalo z této oblasti?"]

@@ -1,6 +1,6 @@
 topic: ~screensix()
 
-proposal: %init Také pro středoškoláky toho mám hodně. Kromě workshopů a projektových dnů přímo ve škole tu je Startup Academy, kde se naučíš, jak z nápadu udělat pořádný byznys. Pro milovníky adrenalinu máme hackathony. Dvacet čtyři hodin na to, abys s týmem přetvořil myšlenku v realitu. Šikovní a nadaní mají navíc šanci na stáž přímo ve firmách. A samozřejmě nechybí ani ideathon, Podkrušnohorský veletrh fiktivních firem, Creative Minds a MAKER FEST. Je fakt z čeho vybírat.
+proposal: %init Také pro středoškoláky toho mám hodně. Kromě workshopů a projektových dnů přímo ve škole tu je Startup Akademy, kde se naučíš, jak z nápadu udělat pořádný byznys. Pro milovníky adrenalinu máme hackathony. Dvacet čtyři hodin na to, abys s týmem přetvořil myšlenku v realitu. Šikovní a nadaní mají navíc šanci na stáž přímo ve firmách. A samozřejmě nechybí ani ideathon, Podkrušnohorský veletrh fiktivních firem, Kreativ Majnds a Mejkr fest. Je fakt z čeho vybírat.
 
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

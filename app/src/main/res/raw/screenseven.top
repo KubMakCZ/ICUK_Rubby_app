@@ -1,6 +1,6 @@
 topic: ~screenseven()
 
-proposal: %init Programy pro vysokoškoláky jsou plné podnikavých nápadů. Nejoblíbenější je asi ICUK Bootcamp. Celý týden jedeš naplno, kdy řešíš reálné zadání od reálné firmy. Pokud máš vlastní nápad na podnikání, tak je tu univerzitní inkubátor přímo na UJEP, kde celý semestr řešíme vaše nápady nebo startupy. Pokud rád předáváš zkušenosti mladším, můžeš být náš mentor v programech pro základní a střední školy. Sleduj náš Instagram, ať ti nic neuteče.
+proposal: %init Programy pro vysokoškoláky jsou plné podnikavých nápadů. Nejoblíbenější je asi ICUK Bůtkemp. Celý týden jedeš naplno, kdy řešíš reálné zadání od reálné firmy. Pokud máš vlastní nápad na podnikání, tak je tu univerzitní inkubátor přímo na UJEP, kde celý semestr řešíme vaše nápady nebo startupy. Pokud rád předáváš zkušenosti mladším, můžeš být náš mentor v programech pro základní a střední školy. Sleduj náš Instagram, ať ti nic neuteče.
 
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
