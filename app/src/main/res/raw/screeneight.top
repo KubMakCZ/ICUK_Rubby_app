@@ -1,10 +1,6 @@
 topic: ~screeneight()
 
-proposal: %init Marketing Prakticky.
-Na fakultě sociálně ekonomické už nějakou dobu spolupracujeme s doktorkou Jánskou na jejím předmětu Marketing.
-Předmět je zcela praktický. Na začátku se rozdělíte do týmů a dostanete zadání od reálné firmy z našeho kraje.
-K dispozici budeš mít celý semestr odborníka na marketing, aby pomáhal při řešení zadání.
-Na konci semestru nebude zkouška, ale představení vyřešení zadání před porotou.
-Za mě je to super možnost, jak se naučit na reálné fungující firmě, jak pomocí marketingu vyřešit potřeby firmy.
+proposal: %init Pokud máš vlastní nápad na podnikání nebo dokonce už rozjetou firmu, tak poslouchej. ICUK má program Startup Go. Je to bezplatný inkubátor, který ti pomůže ověřit nápad a poskládat pořádný byznys plán. Dostaneš mentoring, konzultace s odborníky a desítky workshopů, a to všechno v hodnotě až osmdesát tisíc korun. Celý program vyvrcholí akcí Startup Go Grill, kde nejlepší nápady soutěží před porotou o odměnu až sto tisíc korun. Přihlásit se může skoro každý, kdo má nápad nebo firmu mladší tří let a chce podnikat tady u nás v kraji. A pokud jsi student a nápad teprve klíčí, mrkni na Univerzitní inkubátor.
+
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

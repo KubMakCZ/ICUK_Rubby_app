@@ -32,7 +32,17 @@
         android:paddingBottom="0dp"
         android:layout_width="400dp"
         android:layout_height="100dp"
-        />
+        app:layout_constraintVertical_bias="0.148" />
+
+    <ImageView
+        android:id="@+id/imageView_kraj"
+        android:layout_width="451dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/three_say"
+        app:srcCompat="@drawable/logo_kraj_nove" />
 
     <Button
         android:id="@+id/one_button_reset"

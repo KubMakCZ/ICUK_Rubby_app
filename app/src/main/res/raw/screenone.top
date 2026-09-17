@@ -1,10 +1,6 @@
 topic: ~screenone()
 
-proposal: %init Ahoj, všichni!
-Já jsem Rubby Pepper. Vaše zvídavá, chytrá a přátelská robotka z Ústeckého kraje.
-A nebojte, nevychloubám se. Teda možná jen trošku. Jestli tě zajímá ICUK, naše služby a programy pro studenty,
-nebo chceš vědět víc o tom, co všechno ti může nabídnout Ústecký kraj, stačí si vybrat v menu a já ti hned všechno povím.
-Budu se těšit, že se potkáme na některé z akcí.
-Tak klikni, nebo se zeptej buď mně nebo kolegů, kteří jsou tady se mnou.
+proposal: %init Ahój, já jsem Rubby Pepper. Vaše zvídavá chytrá a přátelská robotka z Ústeckého kraje. A nebojte, nevychloubám se. Teda možná jen trošku. Jestli tě zajímá ICUK a to co dělá, a chceš vědět víc o UJEPu nebo o tom co všechno ti může nabídnout náš kraj, anebo tě zajímá co všechno si jako žák můžeš u nás vyzkoušet, tak stačí si vybrat v menu a já ti hned všechno povím. Tak klikni nebo se zeptej rovnou mě nebo mých lidských kolegů.
+
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

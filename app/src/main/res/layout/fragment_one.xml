@@ -27,37 +27,25 @@
         android:textAllCaps="false"
         android:textSize="40sp"
         android:textStyle="bold"
-        android:paddingTop="80dp"
-        android:paddingBottom="80dp"
-        android:layout_width="450dp"
-        android:layout_height="wrap_content" />
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        app:layout_constraintVertical_bias="0.292" />
 
     <Button
         android:id="@+id/one_button_reset"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
         android:text="@string/reset"
         android:textAllCaps="false"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <Button
-        android:id="@+id/one_button_frag_two"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/fragmentTwo"
-        android:textAllCaps="false"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:paddingStart="20dp"
-        android:paddingEnd="20dp"
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

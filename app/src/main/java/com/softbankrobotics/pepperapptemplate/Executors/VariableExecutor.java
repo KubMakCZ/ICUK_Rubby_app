@@ -4,7 +4,6 @@ import android.util.Log;
 
 import com.aldebaran.qi.sdk.QiContext;
 import com.aldebaran.qi.sdk.object.conversation.BaseQiChatExecutor;
-import com.softbankrobotics.pepperapptemplate.Fragments.ScreenTwoFragment;
 import com.softbankrobotics.pepperapptemplate.MainActivity;
 
 import java.util.List;
@@ -42,8 +41,7 @@ public class VariableExecutor extends BaseQiChatExecutor {
         Log.d(TAG,"variableName :" + variableName);
         switch (variableName){
             case ("qiVariable"):
-                ScreenTwoFragment fragmentTwo  = (ScreenTwoFragment) ma.getFragment();
-                fragmentTwo.setTextQiVariableValue(variableValue);
+                Log.d(TAG, "qiVariable set to: " + variableValue);
                 break;
             default:
                 Log.d(TAG, "I don't know this variable");

@@ -1,4 +1,4 @@
-# ZÁLOHA – původní šablonový topic screenone (není načítán do aplikace)
+# ZaLOHA – puvodní šablonový topic screenone (není načítán do aplikace)
 # Pokud tento topic potřebuješ, přidej "screennine" do topicNames v MainActivity.java
 
 topic: ~screennine()

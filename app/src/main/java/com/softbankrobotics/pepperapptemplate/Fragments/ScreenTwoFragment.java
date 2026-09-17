@@ -8,7 +8,6 @@ import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -19,7 +18,6 @@ public class ScreenTwoFragment extends Fragment {
 
     private static final String TAG = "MSI_ScreenTwoFragment";
     private MainActivity ma;
-    private TextView  qiVariableValue;
 
     /**
      * inflates the layout associated with this fragment
@@ -47,24 +45,9 @@ public class ScreenTwoFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        qiVariableValue = view.findViewById(R.id.two_qi_variable);
-        view.findViewById(R.id.two_button_set_A).setOnClickListener((v) -> {
-                ma.setQiVariable("qiVariable","Pepper"); //set the variable in the qiChat
-                setTextQiVariableValue(getString(R.string.pepper)); //updates the UI displaying the variable
-                });
-        view.findViewById(R.id.two_button_set_B).setOnClickListener((v) -> {
-                ma.setQiVariable("qiVariable","Nao");
-                setTextQiVariableValue(getString(R.string.nao));
-        });
-        view.findViewById(R.id.two_button_reset).setOnClickListener((v) ->
+        view.findViewById(R.id.two_say).setOnClickListener((v) ->
+                ma.getCurrentChatBot().goToBookmarkSameTopic("init"));
+        view.findViewById(R.id.one_button_reset).setOnClickListener((v) ->
                 ma.setFragment(new MainFragment()));
-        view.findViewById(R.id.two_button_frag_one).setOnClickListener((v) ->
-                ma.setFragment(new ScreenOneFragment()));
-        ma.getCurrentChatBot().variables.get("qiVariable").async().getValue().andThenConsume(
-                value -> setTextQiVariableValue(value));
-    }
-
-    public void setTextQiVariableValue(String value){
-        ma.runOnUiThread(() -> qiVariableValue.setText(value));
     }
 }

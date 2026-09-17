@@ -22,7 +22,6 @@
         android:id="@+id/five_say"
         android:layout_width="400dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="0dp"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
         android:text="@string/saySomething"
@@ -40,7 +39,6 @@
         android:layout_width="500dp"
         android:layout_height="200dp"
         android:layout_margin="10dp"
-        android:layout_marginBottom="16dp"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         android:text="@string/reset"
@@ -50,15 +48,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="451dp"
-        android:layout_height="103dp"
-        app:layout_constraintBottom_toTopOf="@+id/one_button_reset"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/five_say"
-        app:srcCompat="@drawable/logo_kraj_nove" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

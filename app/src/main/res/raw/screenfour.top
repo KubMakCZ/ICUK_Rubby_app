@@ -1,10 +1,6 @@
 topic: ~screenfour()
 
-proposal: %init UJEP.
-UJEP je zkratka, to víme. A znamená Univerzita Jana Evangelisty Purkyně.
-Nachází se přímo v Ústí nad Labem a je fakt veliká. Kamarádi z přírodovědecké fakulty mě toho strašně moc naučili.
-Těch fakult má univerzita hodně. A taky má všelijaké programy, dělají vědu a výzkum a spolupracují s kde kým na mezinárodní úrovni.
-A my z inovačního centra s univerzitou spolupracujeme. Máme dokonce společné programy a předměty.
-Koukni na ujep tečka cézet. Než bych vám to já vysvětlila a řekla, mohly by se mi zapálit moje už tak dost tenké kabely.
+proposal: %init UJEP je zkratka, to víme. Znamená to Univerzita Jana Evangelisty Purkyně a najdeš ji přímo v Ústí nad Labem. Je fakt veliká, má spoustu fakult a dělá vědu a výzkum i na mezinárodní úrovni. Já sama teda z UJEPu nejsem. Patřím k ICUK. Ale školu mám taky za sebou. Nejdřív jsem se učila na Vyšší odborné škole obalové techniky ve Štětí, protože obaly nejsou žádná legrace, věř mi. A pak jsem chvíli chodila i na Přírodovědeckou fakultu UJEP, kde mě kamarádi naučili strašně moc. My z ICUK s univerzitou úzce spolupracujeme a máme dokonce společné programy a předměty. Víc o univerzitě se dozvíš na ujep tečka cézet.
+
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

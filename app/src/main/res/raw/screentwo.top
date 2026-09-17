@@ -1,8 +1,6 @@
 topic: ~screentwo()
 
-proposal: %init Icuk.
-Inovační centrum Ústeckého kraje neboli Icuk je skvělá organizace, protože podporuje vzdělávání, startupy, inovace, podnikání a vědu a výzkum.
-Rozvíjí region, hledá nové příležitosti pro kraj, a snaží se, aby lidé tady studovali, pracovali, podnikali a žili.
-Více o icuku najdete na webu icuk tečka cézet.
+proposal: %init Inovační centrum Ústeckého kraje zkráceně ICUK je banda šikovných lidí, díky které tu vlastně stojím. Podporují vzdělávání, startupy, inovace, podnikání a podnikavost. Pořádají soutěže, workshopy a spoustu akcí, kde si žáci můžou vyzkoušet, co je fakt baví. Ať už je to robotika, byznys, nebo něco úplně jiného. Snaží se prostě o to, aby lidi v našem kraji měli chuť tady studovat, pracovat, podnikat a hlavně zůstat. Víc se dozvíš na webu icuk tečka cézet.
+
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

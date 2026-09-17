@@ -49,8 +49,6 @@ public class ScreenOneFragment extends Fragment {
                 ma.getCurrentChatBot().goToBookmarkSameTopic("say"));
         view.findViewById(R.id.one_button_reset).setOnClickListener((v) ->
                 ma.setFragment(new MainFragment()));
-        view.findViewById(R.id.one_button_frag_two).setOnClickListener((v) ->
-                ma.setFragment(new ScreenTwoFragment()));
     }
 
 }

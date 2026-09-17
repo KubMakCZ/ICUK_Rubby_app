@@ -6,19 +6,19 @@ u:(~pozdrav) Zdravíčko! Vyberte si téma kliknutím na obrazovku nebo řeknět
 
 u:({~ukazat} ["1" "jedna" "jedná" "číslo jedná" "jednička" "jedničku" "číslo jedna" "číslo 1" "Kdo jsi" "Kdopak jsi" "Kdo si" "Má úvodní řeč" "Úvodní slovo" "Předávám Úvodní slovo" "můžeš rubby" "máš uvodní slovo" "ruby máš úvodní slovo"]) ~confirmation ^execute(FragmentExecutor, frag_screen_one)
 
-u:({~ukazat} ["2" "dvě" "číslo dva" "číslo 2" "dvojku" "dvojka" "dva"]) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
+u:({~ukazat} ["2" "dvě" "číslo dva" "číslo 2" "dvojku" "dvojka" "dva" "icuku" "icuk"]) ~confirmation ^execute(FragmentExecutor, frag_screen_two)
 
-u:({~ukazat} ["3" "tři" "číslo tři" "tří" "číslo tří" "číslo 3" "trojka" "trojku"]) ~confirmation ^execute(FragmentExecutor, frag_screen_three)
+u:({~ukazat} ["3" "tři" "číslo tři" "tří" "číslo tří" "číslo 3" "trojka" "trojku" "ústecký kraj" "ústecký" "kraj"]) ~confirmation ^execute(FragmentExecutor, frag_screen_three)
 
-u:({~ukazat} ["čtyři" "čtyří" "4" "číslo čtyři" "číslo čtyří" "číslo 4" "čtyřka" "čtyřku"]) ~confirmation ^execute(FragmentExecutor, frag_screen_four)
+u:({~ukazat} ["čtyři" "čtyří" "4" "číslo čtyři" "číslo čtyří" "číslo 4" "čtyřka" "čtyřku" "ujep" "ujepu"]) ~confirmation ^execute(FragmentExecutor, frag_screen_four)
 
-u:({~ukazat} ["pět" "5" "číslo pět" "číslo 5" "pětku" "pětka"]) ~confirmation ^execute(FragmentExecutor, frag_screen_five)
+u:({~ukazat} ["pět" "5" "číslo pět" "číslo 5" "pětku" "pětka" "pro základní školy" "pro zet eš" "pro zš" "základní škola"]) ~confirmation ^execute(FragmentExecutor, frag_screen_five)
 
-u:({~ukazat} ["šest" "6" "číslo šest" "číslo 6" "šestka" "šestku"]) ~confirmation ^execute(FragmentExecutor, frag_screen_six)
+u:({~ukazat} ["šest" "6" "číslo šest" "číslo 6" "šestka" "šestku" "pro střední školy" "pro es eš" "pro sš" "střední škola"]) ~confirmation ^execute(FragmentExecutor, frag_screen_six)
 
-u:({~ukazat} ["sedum" "sedům" "sedm" "7" "číslo sedum" "sedmička" "sedmičku" "číslo sedům" "číslo sedm" "číslo 7"]) ~confirmation ^execute(FragmentExecutor, frag_screen_seven)
+u:({~ukazat} ["sedum" "sedům" "sedm" "7" "číslo sedum" "sedmička" "sedmičku" "číslo sedům" "číslo sedm" "číslo 7" "pro vysoké školy" "pro vé eš" "pro vš" "vysoká škola" "pro vysokoškoláky"]) ~confirmation ^execute(FragmentExecutor, frag_screen_seven)
 
-u:({~ukazat} ["osum" "osům" "osm" "8" "číslo osum" "číslo osům" "číslo osm" "osmička" "osmičku" "číslo 8"]) ~confirmation ^execute(FragmentExecutor, frag_screen_eight)
+u:({~ukazat} ["osum" "osům" "osm" "8" "číslo osum" "číslo osům" "číslo osm" "osmička" "osmičku" "číslo 8" "startupy" "startup"]) ~confirmation ^execute(FragmentExecutor, frag_screen_eight)
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
 

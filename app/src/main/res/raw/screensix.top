@@ -1,9 +1,6 @@
 topic: ~screensix()
 
-proposal: %init ICUK bůtkemp.
-Intenzivní inovační stáž přímo na icuku. Na týden vystoupíš z teoretické části a zažiješ opravdovou praxi.
-Reálné výzvy, zajímavá témata, brejnstorming, týmová práce, dizajn finking, podnikavost a hry. To vše najdeš v tomto unikátním programu.
-Na konci je prezentace projektů a každý účastník se může chlubit certifikátem.
-Fakulty jsou o bútkempu informovaní a na vaše požádání by vás z výuky měli bez problémů uvolnit. A to je super, ne?
+proposal: %init Také pro středoškoláky toho mám hodně. Kromě workshopů a projektových dnů přímo ve škole tu je Startup Academy, kde se naučíš, jak z nápadu udělat pořádný byznys. Pro milovníky adrenalinu máme hackathony. Dvacet čtyři hodin na to, abys s týmem přetvořil myšlenku v realitu. Šikovní a nadaní mají navíc šanci na stáž přímo ve firmách. A samozřejmě nechybí ani ideathon, Podkrušnohorský veletrh fiktivních firem, Creative Minds a MAKER FEST. Je fakt z čeho vybírat.
+
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)

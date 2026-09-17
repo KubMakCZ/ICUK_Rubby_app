@@ -1,10 +1,6 @@
 topic: ~screenseven()
 
-proposal: %init Univerzitní inkubátor.
-Pokud máš nápad na vlastní podnikání a nevíš kam s tím, my v icuku ti s tím pomůžeme.
-Naučíme tě jak udělat z nápadu projekt, který bude fungovat. Stačí ti na to zimní semestr a chuť se rozvíjet.
-Deset praktických vorkšopů, mentoři, odborníci z praxe a na konci představení projektů.
-Provedeme tě tajemstvím biznis plánu, financemi, marketingem, sociálními sítěmi a prezentačními dovednostmi, abys uměl svůj plán představit bance nebo investorům.
-Připoj se a možná bude tvůj plán skvělým startapem.
+proposal: %init Programy pro vysokoškoláky jsou plné podnikavých nápadů. Nejoblíbenější je asi ICUK Bootcamp. Celý týden jedeš naplno, kdy řešíš reálné zadání od reálné firmy. Pokud máš vlastní nápad na podnikání, tak je tu univerzitní inkubátor přímo na UJEP, kde celý semestr řešíme vaše nápady nebo startupy. Pokud rád předáváš zkušenosti mladším, můžeš být náš mentor v programech pro základní a střední školy. Sleduj náš Instagram, ať ti nic neuteče.
+
 
 u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
