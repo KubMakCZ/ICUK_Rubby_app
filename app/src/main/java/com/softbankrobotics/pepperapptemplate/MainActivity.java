@@ -203,7 +203,7 @@ public class MainActivity extends RobotActivity implements RobotLifecycleCallbac
                 R.anim.enter_fade_in_left, R.anim.exit_fade_out_right);
         transaction.replace(R.id.placeholder, fragment, "currentFragment");
         transaction.addToBackStack(null);
-        transaction.commit();
+        transaction.commitAllowingStateLoss();
     }
 }
 
