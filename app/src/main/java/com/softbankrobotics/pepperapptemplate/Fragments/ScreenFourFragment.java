@@ -47,7 +47,7 @@ public class ScreenFourFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         view.findViewById(R.id.four_say).setOnClickListener((v) ->
                 ma.getCurrentChatBot().goToBookmarkSameTopic("init"));
-        view.findViewById(R.id.one_button_reset).setOnClickListener((v) ->
+        view.findViewById(R.id.four_button_reset).setOnClickListener((v) ->
                 ma.setFragment(new MainFragment()));
     }
 

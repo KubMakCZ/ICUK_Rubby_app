@@ -47,7 +47,7 @@ public class ScreenFiveFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         view.findViewById(R.id.five_say).setOnClickListener((v) ->
                 ma.getCurrentChatBot().goToBookmarkSameTopic("init"));
-        view.findViewById(R.id.one_button_reset).setOnClickListener((v) ->
+        view.findViewById(R.id.five_button_reset).setOnClickListener((v) ->
                 ma.setFragment(new MainFragment()));
     }
 

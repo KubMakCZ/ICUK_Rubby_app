@@ -47,7 +47,7 @@ public class ScreenSevenFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         view.findViewById(R.id.seven_say).setOnClickListener((v) ->
                 ma.getCurrentChatBot().goToBookmarkSameTopic("init"));
-        view.findViewById(R.id.one_button_reset).setOnClickListener((v) ->
+        view.findViewById(R.id.seven_button_reset).setOnClickListener((v) ->
                 ma.setFragment(new MainFragment()));
     }
 
