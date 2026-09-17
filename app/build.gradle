@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android'
 android {
     compileSdkVersion 30
     defaultConfig {
-        applicationId "com.kubmak.dynamicpeppertemplate"
+        applicationId "com.kubmak.dynamicpeppertemplate.newdesign"
         minSdkVersion 23
         targetSdkVersion 30
         versionCode 114
