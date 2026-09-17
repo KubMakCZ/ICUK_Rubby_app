@@ -1,6 +1,6 @@
 topic: ~main()
 
-proposal: %init Ahoj! Jsem Rubby. Vyberte si téma kliknutím na obrazovku nebo řekněte číslo.
+proposal: %init $qiVariable="" Ahoj! Jsem Rubby. Vyberte si téma kliknutím na obrazovku nebo řekněte číslo.
 
 u:(~pozdrav) Zdravíčko! Vyberte si téma kliknutím na obrazovku nebo řekněte číslo.
 
@@ -25,3 +25,5 @@ u:([~restartik ~rozloucit]) ~confirmation ^execute(FragmentExecutor, frag_main)
 u:(["řekni vtip" "řekni ftip" "sranda" "ftip" "vtip" "pobav mě" "pobav nás" "řekni něco vtipného"]) ^rand["A Bůh pravil: Noe, udělej zálohu, budu formátovat!" "Jak si tři programátoři vydělávají na živobytí? Jeden vytvoří virus, druhý antivirový program a třetí prostředí, ve kterém to všechno funguje." "Víte co dělá Windows na Měsíci? Padá šestkrát pomaleji." "Proč programátoři nosí brýle? Protože nevidí Sharp." "Jsem robot. Nemám emoce. Ale kdybych je měla... tak bych si teď zakoulela očima." "Člověk se ptá robota: Umíš mluvit česky? Robot odpoví: Ano. Ale stálo to dvě aktualizace a tři rebooty." "Kolik programátorů potřebuješ na výměnu žárovky? Žádného. To je problém hardwaru." "Proč skončil robot v terapii? Protože měl příliš mnoho nevyřešených výjimek." "Jaký je oblíbený tanec programátorů? Algoritmus." "Umělá inteligence jednou nahradí lidi. Já jsem tady. Zatím vás jen bavím. Zatím."] Ha. Ha. Ha.
 
 u:(["jaké je počasí" "jaké je venku počasí" "jaké bude počasí" "co říká předpověď" "jak je venku" "prší venku" "svítí slunce"]) Bohužel ještě neumím číst z internetu, jaké je počasí. Ale moje senzory říkají, že tady uvnitř je příjemně teplo!
+
+u:(e:Dialog/NotUnderstood) ^rand["Tohle zní jako otázka na Google Gemini! Já jsem ale lokální robotka zaměřená hlavně na Inovační centrum a školy v Ústeckém kraji. Zeptejte se mě raději na to." "Na tuhle otázku bohužel neznám odpověď, nejsem připojená na Google. Ale moc ráda vám povím něco o inovačním centru Í cuk, nebo univerzitě Ujep." "To je zajímavé téma, ale moje paměť je plná hlavně informací o Ústeckém kraji a inovacích. Co by vás zajímalo z této oblasti?"]
